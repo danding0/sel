@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html,body{
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+a:link,a:visited,a:hover,a:active{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0px;
+  visibility: hidden;
+}
+
+.login-bg {
+  background-color: #222d32;
+}
+
+.mTop {
+  margin-top: 150px;
+}
+.panel h4 {
+  text-align: center;
+} 
+/* 面包屑导航 */
+
+/* 侧边栏 */
+.side{
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  background-color: #222d32;
+  left: 0;
+  transition:all 0.5s;
+}
+.side.active {
+  left:-180px;
+  transition:all 0.5s;
+}
+.side .top_bar {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.side .top_bar a {
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  background-color: #367fa9
+}
+.side .userinfo {
+  height: 200px;
+  padding-top: 30px;
+  text-align: center;
+}
+.side .userinfo img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.side .userinfo p {
+  color: #fff;
+  font-size: 16px;
+}
+.side .side_list li {
+  text-align: center;
+  line-height: 40px;
+}
+.side .side_list li a {
+  display: block;
+  color: #ddd;
+}
+.side .side_list li a.active {
+  color: #fff;
+  border-left: 3px solid #069;
+  background-color: #1d1f21;
+}
+.side .classify a {
+  padding-left: 25px;
+}
+/* 页面主体 */
+.main{
+  width: 100%;
+  padding-left: 180px;
+  transition:all 0.5s;
+}
+.main.active {
+  padding-left: 0px;
+  transition:all 0.5s;
+}
+.main .main_top {
+  height: 50px;
+  background-color: #3c8dbc;
+  line-height: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+.main .main_top a {
+  font-size: 20px;
+  color: #fff;
+}
+.main .main_body {
+  padding: 20px 30px;
+}
+.main .main_body .main_left {
+  width: 45%;
+  height: 500px;
+}
+.main .main_body .main_right {
+  width: 45%;
+  height: 500px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>self 乐淘商品管理页面</title>
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+  <!-- 侧边栏 -->
+  <div class="side">
+    <!-- 侧边栏头部 -->
+    <div class="top_bar">
+      <a href="javascript:;">没地方去</a>
+    </div>
+    <!-- 用户信息 -->
+    <div class="userinfo">
+      <img src="./images/default.png" alt="">
+      <p>超级管理员</p>
+    </div>
+    <!-- 侧边栏列表 -->
+    <div class="side_list">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="glyphicon glyphicon-user"></span>
+            用户管理
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="manage_list">
+            <span class="glyphicon glyphicon-list"></span>
+            分类管理
+          </a>
+          <div class="classify" style="display:none;">
+            <a href="firstlist.html">一级分类</a>
+            <a href="lastlist.html" >二级分类</a>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:;" class="active">
+            <span class="glyphicon glyphicon-tags"></span>
+            商品管理
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 页面主体 -->
+  <div class="main">
+    <!-- 主体头部 -->
+    <div class="main_top clearfix">
+      <a href="#" class="pull-lett"><span class="glyphicon glyphicon-align-justify"></span></a>
+      <a href="#" class="pull-right"><span class="glyphicon glyphicon-log-out"></span></a>
+    </div>
+     <!-- 面包屑导航 -->
+   <div class="nav_bar">
+    <ol class="breadcrumb">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">用户管理</a></li>
+    </ol>
+   </div>
+   <!-- 主体身体 -->
+    <div class="main_body clearfix">
+      商品管理页面
+    </div>
+  </div>
+  <!-- 退出登录模态框 -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="login_out">
+      <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">温馨提示</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-danger"><span class="glyphicon glyphicon-info-sign"></span>您确定要退出后台管理系统吗？</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary btn_out">确定</button>
+        </div>
+      </div><!-- /.modal-content -->
+      </div>>
+  </div><!-- /.modal -->
+  <script src="./lib/jquery/jquery.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+  <script src="./lib/nprogress/nprogress.js"></script>
+  <script src="./lib/echarts/echarts.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/product.js"></script>
+</body>
+</html>
